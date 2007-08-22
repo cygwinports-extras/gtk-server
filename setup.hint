@@ -1,0 +1,7 @@
+category: Shells Interpreters Gnome
+requires: cygwin atk glib2 gdk-pixbuf2 gtk2-x11 libglade2 pango
+sdesc: "Stream-oriented interface to the GTK libraries"
+ldesc: "The GTK-server is a free, open-source project, which offers a 
+stream-oriented interface to the GTK libraries, enabling access to 
+graphical user interfaces for shellscripts and interpreted programming 
+languages using either GTK 1.x or 2.x."
