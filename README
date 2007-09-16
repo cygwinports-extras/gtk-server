@@ -21,6 +21,7 @@ Build requirements:
   cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
+  gcc-java-3.4.4-3 (for libffi)
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -34,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk-server-2.1.4-X-src.tar.bz2
+  unpack gtk-server-2.1.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk-server-2.1.4-X.cygport all
+  cygport ./gtk-server-2.1.6-X.cygport all
 
 This will create:
-  /usr/src/gtk-server-2.1.4-X-src.tar.bz2
-  /usr/src/gtk-server-2.1.4-X.tar.bz2
+  /usr/src/gtk-server-2.1.6-X-src.tar.bz2
+  /usr/src/gtk-server-2.1.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,10 +52,10 @@ Files included in the binary package:
   /etc/gtk-server.cfg
   /usr/bin/gtk-server.exe
   /usr/bin/kill-gtk-server
-  /usr/share/doc/Cygwin/gtk-server-2.1.4.README
-  /usr/share/doc/gtk-server-2.1.4/CREDITS
-  /usr/share/doc/gtk-server-2.1.4/GPL.txt
-  /usr/share/doc/gtk-server-2.1.4/INSTALL
+  /usr/share/doc/Cygwin/gtk-server-2.1.6.README
+  /usr/share/doc/gtk-server-2.1.6/CREDITS
+  /usr/share/doc/gtk-server-2.1.6/GPL.txt
+  /usr/share/doc/gtk-server-2.1.6/INSTALL
   /usr/share/man/man1/gtk-server.1.gz
   /usr/share/man/man1/kill-gtk-server.1.gz
   /usr/share/man/man5/gtk-server.cfg.5.gz
@@ -62,6 +63,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.1.6-1 -----
+Version bump.
 
 ----- version 2.1.4-1 -----
 Major version bump.
