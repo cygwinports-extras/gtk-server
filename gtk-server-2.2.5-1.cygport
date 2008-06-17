@@ -1,0 +1,20 @@
+DESCRIPTION="Stream-oriented interface to the GTK libraries"
+HOMEPAGE="http://www.gtk-server.org/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+NO_AUTOHEADER=1
+CYGCONF_ARGS="--with-gtk2"
+
+src_install() {
+	cd ${B}
+	dobin gtk-server.exe
+
+	cd ${S}
+	dobin stop-gtk-server
+
+	insinto /etc
+	doins gtk-server.cfg
+
+	doman docs/{,stop-}gtk-server.1
+	newman docs/gtk-server.cfg.1 gtk-server.cfg.5
+}
